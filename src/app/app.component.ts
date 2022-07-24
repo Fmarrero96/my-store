@@ -20,4 +20,13 @@ export class AppComponent {
     avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png'
 
     }  ;
+
+    //comportamientos
+    toggleButton(){
+      this.btnDisabled = !this.btnDisabled //lo niego para que me devuelva lo contrario, si esta en true pasa a false y viceversa
+    };
+
+    increaseAge (){
+      this.person.age = this.person.age + 1;
+    }
 }

@@ -1,4 +1,11 @@
 
+<h1>Eventos</h1>
+<button [disabled]="btnDisabled">Enviar</button>
+<button (click)="toggleButton()">Toggle Button</button>   <!-- (click) es el evento cuando se haga click en el botton se utiliza la funcion toggleButton() definida en ts, esto hace que cambie de true a false--> 
+<p>Edad {{person.age}}</p>
+<button (click)="increaseAge()">Age +</button> 
+
+<hr/> <!-- separa --> 
 <h1>Propiedades</h1>
 <button [disabled]="btnDisabled">Enviar</button>
 <input type ="text" [value]="person.name"/>  <!-- se le pone al atributo para que tome el valor  y en las comillas va el nombre de la variable en el ts--> 
