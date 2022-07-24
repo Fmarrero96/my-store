@@ -4,6 +4,13 @@
 <button (click)="toggleButton()">Toggle Button</button>   <!-- (click) es el evento cuando se haga click en el botton se utiliza la funcion toggleButton() definida en ts, esto hace que cambie de true a false--> 
 <p>Edad {{person.age}}</p>
 <button (click)="increaseAge()">Age +</button> 
+<div class="box" (scroll)="onScroll($event)"> <!-- los eventos nativos de html y doom se envian con signo $ --> 
+ <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse rem et, error explicabo dicta fuga vel quas laudantium! Harum non alias blanditiis reiciendis mollitia ipsa nobis amet totam laborum veniam!</p>   
+</div>
+<p>Nombre: {{person.name}}</p>
+<input type="text" [value]="person.name" (keyup)="changeName($event)">
+
+
 
 <hr/> <!-- separa --> 
 <h1>Propiedades</h1>
@@ -19,5 +26,5 @@
 <h1>Hola Mundo</h1>
 <h2> {{'Hola Mundo'.repeat(5) }}</h2>
 <p>3+3 {{3 + 3}} </p> <!-- en la parte de 3+3 me la escribi como esta pero en cambio cuando se pone la interpolacion {{}} hace la cuenta y da el resultado -->
-<h3>Hola, soy {{name}} y tengo {{age}}</h3>
+<h3>Hola, soy {{person.name}} y tengo {{age}}</h3>
 <img src="{{img}}" alt="logo de angular"> > <!-- lo que se optiene interpolan es la url entonces es el valor string que manda a la etiqueta IMG-->
