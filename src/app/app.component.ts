@@ -11,7 +11,7 @@ export class AppComponent {
   age = 26;
   img = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png';
   btnDisabled = true;
-
+  newName= '';
 
 
   person = {
@@ -40,5 +40,10 @@ export class AppComponent {
     changeName(event: Event){
       const element = event.target as HTMLInputElement;
       this.person.name = element.value;
+    };
+    
+    addName(){
+      this.names.push(this.newName);
+      this.newName = '';
     };
 }
