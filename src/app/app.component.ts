@@ -21,6 +21,8 @@ export class AppComponent {
 
     }  ;
 
+    names : string[] = ['Nico','Juli','Santi'];
+
     //comportamientos
     toggleButton(){
       this.btnDisabled = !this.btnDisabled //lo niego para que me devuelva lo contrario, si esta en true pasa a false y viceversa
