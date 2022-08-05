@@ -10,9 +10,9 @@
 
 <hr/> <!-- separa --> 
 <h1>*NgForObjets</h1>
-<div>
-    <div class="linea" *ngFor ="let product of products">
-        <img width="250" [src]="product.image" alt="image">
+<div class="products--grid">
+    <div  *ngFor ="let product of products">
+        <img [src]="product.image" alt="image">
         <h2> {{product.price}} </h2>
         <p>{{product.name}}</p>
     </div>
@@ -78,4 +78,4 @@
 <h2> {{'Hola Mundo'.repeat(5) }}</h2>
 <p>3+3 {{3 + 3}} </p> <!-- en la parte de 3+3 me la escribi como esta pero en cambio cuando se pone la interpolacion {{}} hace la cuenta y da el resultado -->
 <h3>Hola, soy {{person.name}} y tengo {{age}}</h3>
-<img src="{{img}}" alt="logo de angular"> > <!-- lo que se optiene interpolan es la url entonces es el valor string que manda a la etiqueta IMG-->
+<img width="200px" src="{{img}}" alt="logo de angular"> > <!-- lo que se optiene interpolan es la url entonces es el valor string que manda a la etiqueta IMG-->
