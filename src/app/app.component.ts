@@ -8,6 +8,7 @@ import {Product } from './product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  widthImg = 10; //agregado en la parte de clases y estilos
   name = 'Facundo'; //La variable tiene que ser publica,si es privada no va a permitir ver 
   age = 26;
   img = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png';
