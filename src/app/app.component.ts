@@ -21,6 +21,14 @@ export class AppComponent {
     background: 'red'
   };
 
+  register = {
+    nombre: '',
+    email: '',
+    password: ''
+  };
+
+
+
   products: Product[] = [
     {
       name: 'EL mejor juguete',
@@ -90,5 +98,12 @@ export class AppComponent {
 
     deleteName(index:number){
       this.names.splice(index,1); // el uno indica cuantos eliminar
+    };
+
+    onRegister(){
+      console.log(this.register);
+      this.register.nombre ='';
+      this.register.email ='';
+      this.register.password ='';
     };
 }
