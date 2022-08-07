@@ -14,6 +14,13 @@ export class AppComponent {
   img = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png';
   btnDisabled = true;
   newName= '';
+
+  box = {
+    width: 100,
+    height:100,
+    background: 'red'
+  };
+
   products: Product[] = [
     {
       name: 'EL mejor juguete',
